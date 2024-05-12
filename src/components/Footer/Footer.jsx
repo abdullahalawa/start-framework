@@ -3,7 +3,7 @@ export default function Footer() {
     <>
       <div className="footer absolute bottom-0 left-0 right-0 text-white">
         <div className="footer-info  bg-main py-24 ">
-          <div className="container mx-auto flex sm:flex-row flex-col sm:px-1 md:px-5 lg:px-8 sm:gap-4 gap-8">
+          <div className="container  flex sm:flex-row flex-col  sm:gap-4 gap-8">
             <div className="sm:w-1/3 w-full text-center space-y-3">
               <h2 className="text-3xl font-semibold">LOCATION</h2>
               <p>2215 John Daniel Drive</p>

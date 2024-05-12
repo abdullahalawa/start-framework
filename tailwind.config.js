@@ -8,6 +8,17 @@ export default {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        screens: {
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1280px",
+        },
+      },
+
       colors: {
         main: "#2C3E50",
         secondery: "#1A252F",
