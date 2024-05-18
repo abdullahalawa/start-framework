@@ -42,28 +42,28 @@ export default function Navbar() {
           </button>
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
+              <li className={`${style.li}`}>
                 <NavLink
                   to="/about"
-                  className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 "
+                  className="navLink block py-2 px-3 text-white rounded md:border-0  md:py-2 md:px-4 uppercase"
                 >
                   About
                 </NavLink>
               </li>
 
-              <li>
+              <li className={`${style.li}`}>
                 <NavLink
                   to="/portfolio"
-                  className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 "
+                  className="block py-2 px-3 text-white rounded md:border-0  md:py-2 md:px-4 uppercase"
                 >
                   Portfolio
                 </NavLink>
               </li>
 
-              <li>
+              <li className={`${style.li}`}>
                 <NavLink
                   to="/contact"
-                  className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 "
+                  className="block py-2 px-3 text-white rounded md:border-0  md:py-2 md:px-4 uppercase"
                 >
                   Contact
                 </NavLink>
