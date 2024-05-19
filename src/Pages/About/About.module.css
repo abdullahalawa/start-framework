@@ -1,0 +1,21 @@
+.container :global(.mark)::before {
+  content: "";
+  height: 4px;
+  width: 80px;
+  background-color: #fff;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 40px;
+}
+
+.container :global(.mark)::after {
+  content: "";
+  height: 4px;
+  width: 80px;
+  background-color: #fff;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 40px;
+}

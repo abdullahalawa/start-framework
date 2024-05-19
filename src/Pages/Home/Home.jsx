@@ -9,7 +9,7 @@ export default function Home() {
           className={`container ${style.container} py-14 text-white flex flex-col justify-center items-center gap-4`}
         >
           <img src={image} alt="image" />
-          <h2 className="text-4xl font-semibold pt-3">START FRAMEWORK</h2>
+          <h2 className="text-4xl font-bold pt-3">START FRAMEWORK</h2>
           <div className="mark relative">
             <i className="fa-solid fa-star relative"></i>
           </div>
