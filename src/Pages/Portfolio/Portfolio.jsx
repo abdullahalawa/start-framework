@@ -2,8 +2,14 @@ import style from "./Portfolio.module.css";
 import img1 from "../../assets/images/poert1.png";
 import img2 from "../../assets/images/port2.png";
 import img3 from "../../assets/images/port3.png";
+import FsLightbox from "fslightbox-react";
+import { useState } from "react";
 
 export default function Portfolio() {
+  const [toggler, setToggler] = useState(false);
+  const [imgIndex, setImgIndex] = useState(0);
+  const Images = [img1, img2, img3, img1, img2, img3];
+
   return (
     <>
       <div className=" bg-white">
@@ -18,7 +24,14 @@ export default function Portfolio() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            <div>
+            <div
+              onClick={() => {
+                setToggler(!toggler);
+              }}
+              onMouseEnter={() => {
+                setImgIndex(0);
+              }}
+            >
               <div className={`ovelay ${style.ovelay} relative`}>
                 <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
                 <img
@@ -29,7 +42,14 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div>
+            <div
+              onClick={() => {
+                setToggler(!toggler);
+              }}
+              onMouseEnter={() => {
+                setImgIndex(1);
+              }}
+            >
               <div className={`ovelay ${style.ovelay} relative`}>
                 <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
                 <img
@@ -40,7 +60,14 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div>
+            <div
+              onClick={() => {
+                setToggler(!toggler);
+              }}
+              onMouseEnter={() => {
+                setImgIndex(2);
+              }}
+            >
               <div className={`ovelay ${style.ovelay} relative`}>
                 <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
                 <img
@@ -51,7 +78,14 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div>
+            <div
+              onClick={() => {
+                setToggler(!toggler);
+              }}
+              onMouseEnter={() => {
+                setImgIndex(3);
+              }}
+            >
               <div className={`ovelay ${style.ovelay} relative`}>
                 <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
                 <img
@@ -62,7 +96,14 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div>
+            <div
+              onClick={() => {
+                setToggler(!toggler);
+              }}
+              onMouseEnter={() => {
+                setImgIndex(4);
+              }}
+            >
               <div className={`ovelay ${style.ovelay} relative`}>
                 <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
                 <img
@@ -73,7 +114,14 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div>
+            <div
+              onClick={() => {
+                setToggler(!toggler);
+              }}
+              onMouseEnter={() => {
+                setImgIndex(5);
+              }}
+            >
               <div className={`ovelay ${style.ovelay} relative`}>
                 <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
                 <img
@@ -86,6 +134,12 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
+
+      <FsLightbox
+        toggler={toggler}
+        sources={[Images[imgIndex]]}
+        key={imgIndex}
+      />
     </>
   );
 }
