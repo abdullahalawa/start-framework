@@ -19,23 +19,69 @@ export default function Portfolio() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
             <div>
-              <img className="h-auto max-w-full rounded-lg" src={img1} alt="" />
-            </div>
-            <div>
-              <img className="h-auto max-w-full rounded-lg" src={img2} alt="" />
-            </div>
-            <div>
-              <img className="h-auto max-w-full rounded-lg" src={img3} alt="" />
+              <div className={`ovelay ${style.ovelay} relative`}>
+                <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
+                <img
+                  className="cardImage h-auto max-w-full rounded-lg"
+                  src={img1}
+                  alt=""
+                />
+              </div>
             </div>
 
             <div>
-              <img className="h-auto max-w-full rounded-lg" src={img1} alt="" />
+              <div className={`ovelay ${style.ovelay} relative`}>
+                <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
+                <img
+                  className="cardImage h-auto max-w-full rounded-lg"
+                  src={img2}
+                  alt=""
+                />
+              </div>
             </div>
+
             <div>
-              <img className="h-auto max-w-full rounded-lg" src={img2} alt="" />
+              <div className={`ovelay ${style.ovelay} relative`}>
+                <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
+                <img
+                  className="cardImage h-auto max-w-full rounded-lg"
+                  src={img3}
+                  alt=""
+                />
+              </div>
             </div>
+
             <div>
-              <img className="h-auto max-w-full rounded-lg" src={img3} alt="" />
+              <div className={`ovelay ${style.ovelay} relative`}>
+                <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
+                <img
+                  className="cardImage h-auto max-w-full rounded-lg"
+                  src={img1}
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div>
+              <div className={`ovelay ${style.ovelay} relative`}>
+                <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
+                <img
+                  className="cardImage h-auto max-w-full rounded-lg"
+                  src={img2}
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div>
+              <div className={`ovelay ${style.ovelay} relative`}>
+                <i className="fa-solid fa-plus text-7xl absolute rounded-lg h-full w-full flex justify-center items-center transition-all hover:bg-accent/80"></i>
+                <img
+                  className="cardImage h-auto max-w-full rounded-lg"
+                  src={img3}
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
